@@ -1,16 +1,251 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://upskillzone.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://upskillzone.com/" rel="alternate" type="text/html" /><updated>2021-01-23T11:46:17+05:30</updated><id>https://upskillzone.com/feed.xml</id><title type="html">Upskill Zone | Tutorials</title><subtitle>Software Programmer's zone to Upskill the Puzzle solving and Problem solving Skills.</subtitle><author><name>Ashok Karmegam</name></author><entry><title type="html">Interview Puzzles</title><link href="https://upskillzone.com/Interview-Puzzles/" rel="alternate" type="text/html" title="Interview Puzzles" /><published>2021-01-23T11:46:17+05:30</published><updated>2021-01-15T23:15:49+05:30</updated><id>https://upskillzone.com/Interview-Puzzles</id><content type="html" xml:base="https://upskillzone.com/Interview-Puzzles/">&lt;h1 id=&quot;interview-puzzles&quot;&gt;Interview Puzzles&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://upskillzone.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://upskillzone.com/" rel="alternate" type="text/html" /><updated>2021-06-06T20:09:52+05:30</updated><id>https://upskillzone.com/feed.xml</id><title type="html">Upskill Zone</title><subtitle>Software Programmer's zone to Upskill the Puzzle solving and Problem solving Skills to crack Interview comfortably.</subtitle><author><name>Ashok Karmegam</name></author><entry><title type="html">100 Monkeys and Doors Puzzle</title><link href="https://upskillzone.com/puzzles/100-Monkeys-and-Doors-Puzzle.html" rel="alternate" type="text/html" title="100 Monkeys and Doors Puzzle" /><published>2021-06-06T00:18:00+05:30</published><updated>2021-06-06T20:07:38+05:30</updated><id>https://upskillzone.com/puzzles/100-Monkeys-and-Doors-Puzzle</id><content type="html" xml:base="https://upskillzone.com/puzzles/100-Monkeys-and-Doors-Puzzle.html">&lt;h1 id=&quot;100-monkeys-and-doors-puzzle&quot;&gt;100 Monkeys and Doors Puzzle&lt;/h1&gt;
+&lt;p&gt;There are 100 doors in a row, all of them are initially in closed state. And
+there are 100 monkeys (or 100 People) as well. All monkeys walks through all
+the doors one by one. Each monkey toggles the door (that means, closing if the
+door is opened or opening if the door is closed) while walking through the
+doors. This toggling on door is performed by monkeys in below mentioned order.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;1st monkey toggles all the doors.&lt;/li&gt;
+  &lt;li&gt;2nd monkey toggles 2nd, 4th, 6th, … 100th door.&lt;/li&gt;
+  &lt;li&gt;3rd monkey toggles 3rd, 6th, 9th, … 99th door.&lt;/li&gt;
+  &lt;li&gt;4th monkey toggles 4th, 8th, 12th, … 100th door.&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+  &lt;li&gt;50th monkey toggles 50th and 100th door.&lt;/li&gt;
+  &lt;li&gt;100th monkey toggles only 100th door.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Puzzles are one of the important portion in an Software Programmer Interview
-process to test Interviewee’s Analytical and Problem Skills.
-And also to test how Interviewee can write an Optimal Code to solve it.&lt;/p&gt;
+&lt;p&gt;Puzzle is to find out &lt;strong&gt;which all doors are opened at the end after all the
+monkeys walkthrough the doors&lt;/strong&gt; ?&lt;/p&gt;
 
-&lt;p&gt;Here some of the Puzzles are listed with a Detailed Solution and
-an Implemention in C language. Don’t believe that one of the below
-listed Puzzles will appear in your Interview Process. Going through this will
-help you to improve your skills to approach and solve the Puzzles, that will
-help to solve any kind of Puzzles in your Interview.&lt;/p&gt;
+&lt;h2 id=&quot;1-solution&quot;&gt;1. Solution&lt;/h2&gt;
+&lt;p&gt;Here the initial state of door is closed, so if a door is toggled two times then
+it will be in closed state. That means for even number of toggles the door state
+will be closed. Similarly for odd number of toggles the door state will be
+opened. &lt;strong&gt;So need to find which all doors are toggled by monkey in odd number of
+times&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;All the best for your Hunting process of Software Programming Job.&lt;/p&gt;</content><author><name>Ashok Karmegam</name></author><summary type="html">Interview Puzzles</summary></entry><entry><title type="html">Egg Dropping Puzzle - n eggs and m floors</title><link href="https://upskillzone.com/Interview-Puzzles/Egg-Dropping-Puzzle-n-eggs-and-m-floors/" rel="alternate" type="text/html" title="Egg Dropping Puzzle - n eggs and m floors" /><published>2021-01-23T11:46:17+05:30</published><updated>2021-01-15T23:15:49+05:30</updated><id>https://upskillzone.com/Interview-Puzzles/Egg-Dropping-Puzzle-n-eggs-and-m-floors</id><content type="html" xml:base="https://upskillzone.com/Interview-Puzzles/Egg-Dropping-Puzzle-n-eggs-and-m-floors/">&lt;h1 id=&quot;egg-dropping-puzzle---n-eggs-and-m-floors&quot;&gt;Egg Dropping Puzzle - n eggs and m floors&lt;/h1&gt;
+&lt;h3 id=&quot;11-understanding-factors-of-number&quot;&gt;1.1 Understanding Factors of Number&lt;/h3&gt;
+&lt;p&gt;A door is toggled by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt;th monkey if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt; divides door number. So need to
+understand &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;factors of a number&lt;/code&gt; concept here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Factors of a number&lt;/strong&gt; are a set of numbers which all can divides an another
+number evenly. For example &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Factors of 10&lt;/code&gt; are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1, 2, 5, 10&lt;/code&gt;. That means, there
+are four factors for the number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt;, all four of them can divide number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt;
+evenly. These four numbers are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt;. This number of factors varies
+for different numbers. For example number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt; has &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6&lt;/code&gt; factors which are
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1, 2, 4, 5, 10, 20&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;All numbers has a minimum of two factors, one of them is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; and the another is
+the same number itself. And all prime numbers has only these two as factors, no
+other factors. Because it is not divisible by any other number, thats why it
+is called as Prime number.&lt;/p&gt;
+
+&lt;p&gt;These factors are always occurs as pair. For example take the factors of the
+number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt;,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1 x 20 = 20&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2 x 10 = 20&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4 x 5 = 20&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As these factors are occuring in pairs, total number of factors for a numbers
+are always even except for perfect squares.&lt;/p&gt;
+
+&lt;p&gt;Perfect squares (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt; …) are the one which has odd number of
+factors. Because &lt;strong&gt;perfect squares are the one which results to a multiplication
+of two same numbers&lt;/strong&gt;. For example factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt; are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1, 2, 4, 8, 16&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1 x 16 = 16&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2 x 8 = 16&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4 x 4 = 16&lt;/code&gt;: So &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt; is factor of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;. No duplicate in the list of factors.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So all perfect square numbers (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;, …) has odd number of
+factors.&lt;/p&gt;
+
+&lt;h3 id=&quot;12-using-factors-of-number-to-solve-100-doors-puzzle&quot;&gt;1.2 Using Factors of Number to solve 100 Doors Puzzle&lt;/h3&gt;
+&lt;p&gt;In 100 Door Puzzle, each monkey toggles the door &lt;strong&gt;if the door number is
+divisible by monkey number&lt;/strong&gt;. That means every door is toggled for the factors
+of that door number. That means door number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt; is toggled by 4 times, by the
+1st, 2nd, 5th and 10th monkeys. Similarly door number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt; is toggled by 6
+times.&lt;/p&gt;
+
+&lt;p&gt;So to find out which all doors are opened after all the monkeys walk through,
+need to find out which all doors are toggled in odd number of times.&lt;/p&gt;
+
+&lt;p&gt;As odd number of factors are available only for perfect square numbers, only
+perfect square number doors (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;, … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;81&lt;/code&gt;) are toggled odd
+number of times. So these doors are opened at the end. All other doors (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt;,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt;, … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100&lt;/code&gt;) are closed at the end.&lt;/p&gt;</content><author><name>Ashok Karmegam</name></author><category term="puzzles" /><category term="puzzle" /><category term="interview questions" /><summary type="html">100 Monkeys and Doors Puzzle There are 100 doors in a row, all of them are initially in closed state. And there are 100 monkeys (or 100 People) as well. All monkeys walks through all the doors one by one. Each monkey toggles the door (that means, closing if the door is opened or opening if the door is closed) while walking through the doors. This toggling on door is performed by monkeys in below mentioned order. 1st monkey toggles all the doors. 2nd monkey toggles 2nd, 4th, 6th, … 100th door. 3rd monkey toggles 3rd, 6th, 9th, … 99th door. 4th monkey toggles 4th, 8th, 12th, … 100th door. … 50th monkey toggles 50th and 100th door. 100th monkey toggles only 100th door.</summary></entry><entry><title type="html">Add two numbers without using arithmetic operators</title><link href="https://upskillzone.com/programs/Add-two-numbers-without-using-arithemetic-operators.html" rel="alternate" type="text/html" title="Add two numbers without using arithmetic operators" /><published>2021-06-05T00:18:00+05:30</published><updated>2021-06-06T20:07:38+05:30</updated><id>https://upskillzone.com/programs/Add-two-numbers-without-using-arithemetic-operators</id><content type="html" xml:base="https://upskillzone.com/programs/Add-two-numbers-without-using-arithemetic-operators.html">&lt;h1 id=&quot;add-two-numbers-without-using-arithmetic-operators&quot;&gt;Add two numbers without using arithmetic operators&lt;/h1&gt;
+&lt;p&gt;Need to add two number without using arithemetic operators like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-solution&quot;&gt;1. Solution&lt;/h2&gt;
+&lt;p&gt;Adding two number without using arithmetic operators can be performed using
+binary operators XOR (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt;) and AND (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;).&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;First two number is XORed and stored the result in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sum&lt;/code&gt; variable.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sum = num1 ^ num2;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Then same two number is ANDed and left shifted once and stored the result
+in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;carry&lt;/code&gt; variable.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;carry = (num1 &amp;amp; num2) &amp;lt;&amp;lt; 1;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Then if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;carry&lt;/code&gt; is non zero then continue 1st and 2nd step by keeping
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sum&lt;/code&gt; as first number and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;carry&lt;/code&gt; as second number.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here 1st operation performs XOR operation on two numbers and that ommits the
+carry on every bit. For example XORing two number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;110&lt;/code&gt;) and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100&lt;/code&gt;)
+gives result as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;010&lt;/code&gt;), 3rd position generates carry which needs to be
+placed on 4th position that is not done by X0R. That is why 2nd operation is
+needed here, that performs AND on the same two number and result is left shifted
+to get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1000&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Now redoing 1st and 2nd operation with first number as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; and 2nd number as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8&lt;/code&gt;
+will get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt; as part of 1st operation. And &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; as part of 2nd operation. The
+execution ends once the 2nd operation (carry generation) returns 0.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-algorithm-pseudocode&quot;&gt;2. Algorithm Pseudocode&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int add(int num1, int num2)
+{
+  int sum, carry;
+  do {
+    sum = num1 ^ num2;
+    carry = (num1 &amp;amp; num2) &amp;lt;&amp;lt; 1;
+    num1 = sum;
+    num2 = carry;
+  } while (carry != 0);
+  return sum;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Ashok Karmegam</name></author><category term="programs" /><category term="program" /><category term="interview questions" /><summary type="html">Add two numbers without using arithmetic operators Need to add two number without using arithemetic operators like +, -, *, /, %.</summary></entry><entry><title type="html">Crossing the Bridge with Torch Puzzle</title><link href="https://upskillzone.com/puzzles/Crossing-the-Bridge-with-Torch-Puzzle.html" rel="alternate" type="text/html" title="Crossing the Bridge with Torch Puzzle" /><published>2021-06-05T00:18:00+05:30</published><updated>2021-06-06T20:07:38+05:30</updated><id>https://upskillzone.com/puzzles/Crossing-the-Bridge-with-Torch-Puzzle</id><content type="html" xml:base="https://upskillzone.com/puzzles/Crossing-the-Bridge-with-Torch-Puzzle.html">&lt;h1 id=&quot;crossing-the-bridge-with-torch-puzzle&quot;&gt;Crossing the Bridge with Torch Puzzle&lt;/h1&gt;
+&lt;p&gt;Few people are trying to cross an old and rusty bridge in a night. Conditions
+for crossing the bridge are&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Only 2 person can be on the bridge at a time.&lt;/li&gt;
+  &lt;li&gt;Crossing without torch is impossible.&lt;/li&gt;
+  &lt;li&gt;Each person takes different time to cross the bridge, because of different
+age groups of people. So when 2 person crosses, faster walking person also
+should walk equally to the slower walking person. So that both can walk on torch
+light.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Puzzle is to find, &lt;strong&gt;what is the shortest duration taken by all the people to
+cross the bridge?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1-solution&quot;&gt;1. Solution&lt;/h2&gt;
+&lt;p&gt;Solution is to keep moving 2 people at a time with a torch in multiple batches.
+After every movement, a fastest walking person who reached the destination
+should come back to the starting place with the torch so that remaining people
+can cross.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-solution-with-example&quot;&gt;1.1 Solution with Example&lt;/h3&gt;
+&lt;p&gt;Here the solution is explained with an example.
+Consider four people are crossing the bridge and their time taken
+to cross the bridge are given below.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Person A takes 1 min&lt;/li&gt;
+  &lt;li&gt;Person B takes 2 mins&lt;/li&gt;
+  &lt;li&gt;Person C takes 6 mins&lt;/li&gt;
+  &lt;li&gt;Person D takes 10 mins&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The solution to cross the bridge with above set of 4 people are&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;First find out two fastest walking person and move them. That means move A
+and B. &lt;strong&gt;This takes 2 mins&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Now C and D are in starting place. A and B are in destination with torch.
+Now bring back the torch with the help of fastest walking person on the
+desitnation. That means, make A to bring back the torch. &lt;strong&gt;This takes 1 min&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Now A, C and D are in starting place with torch. B is in destination.
+Now move 2 slowest walking person C and D to the destination. &lt;strong&gt;This takes 10
+mins&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Now bring back torch with the help of fastest walking person B. &lt;strong&gt;This takes
+2 mins&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Now move both A and B. &lt;strong&gt;This takes 2 mins&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now all of them have crossed the bridge with 5 movement. Totally it takes
+&lt;strong&gt;17mins&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;12-general-solution&quot;&gt;1.2 General Solution&lt;/h3&gt;
+&lt;p&gt;In this puzzle number of person varies, not always with 4 person. So solution
+to solve with any number of person need to follow below procedure.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Move two fastest person.&lt;/li&gt;
+  &lt;li&gt;If some more are waiting in the starting place, then bring back one fastest
+person to starting place. Or else finished.&lt;/li&gt;
+  &lt;li&gt;Move two slowest person.&lt;/li&gt;
+  &lt;li&gt;If some more are waiting in the staring place, then bring back the one
+fastest person to starting place. This person is nothing but the person who
+moved in Step 2. Or else finished.&lt;/li&gt;
+  &lt;li&gt;Now people who are in destination are slowest person, at this time need to
+continue from Step1 to move two fastest person. Now moving slowest person is
+not correct, because next time it will take more time to bring back torch.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Repeatedly doing above mentioned steps will solve the puzzle with any number of
+persons. &lt;strong&gt;Solution ends either at the Step2 or Step4 when there are no person
+in the starting place&lt;/strong&gt;.&lt;/p&gt;</content><author><name>Ashok Karmegam</name></author><category term="puzzles" /><category term="puzzle" /><category term="interview questions" /><summary type="html">Crossing the Bridge with Torch Puzzle Few people are trying to cross an old and rusty bridge in a night. Conditions for crossing the bridge are Only 2 person can be on the bridge at a time. Crossing without torch is impossible. Each person takes different time to cross the bridge, because of different age groups of people. So when 2 person crosses, faster walking person also should walk equally to the slower walking person. So that both can walk on torch light.</summary></entry><entry><title type="html">Swap two numbers without using temporary variable</title><link href="https://upskillzone.com/programs/Swap-two-numbers-without-using-temporary-variable.html" rel="alternate" type="text/html" title="Swap two numbers without using temporary variable" /><published>2021-06-05T00:18:00+05:30</published><updated>2021-06-06T20:07:38+05:30</updated><id>https://upskillzone.com/programs/Swap-two-numbers-without-using-temporary-variable</id><content type="html" xml:base="https://upskillzone.com/programs/Swap-two-numbers-without-using-temporary-variable.html">&lt;h1 id=&quot;swap-two-numbers-without-using-temporary-variable&quot;&gt;Swap two numbers without using temporary variable&lt;/h1&gt;
+&lt;p&gt;Swapping two numbers need a temporary variable like mentioned below.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tmp = num1;
+num1 = num2;
+num2 = tmp;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Can we achieve swapping of two numbers without using temporary variable ?&lt;/p&gt;
+
+&lt;h2 id=&quot;1-solution&quot;&gt;1. Solution&lt;/h2&gt;
+&lt;p&gt;This can be achieved using three methods which are described below.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-solution-with-addition-and-subtraction-operation&quot;&gt;1.1 Solution with addition and subtraction operation&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;First add both the numbers and store in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; variable itself.&lt;/li&gt;
+  &lt;li&gt;Then subtract &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; and store the result on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt;. Now &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt;
+gets the value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Similarly subtract &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; and store the result on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt;.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;num1 = num1 + num2;
+num2 = num1 - num2;
+num1 = num1 - num2;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Here the assumption is, the addition of two number does not overflow. If
+overflows this is not the right solution.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-solution-with-multiplication-and-division-operation&quot;&gt;1.2 Solution with multiplication and division operation&lt;/h3&gt;
+&lt;p&gt;Similarly swapping of two numbers can be achieved using multiplication and
+division.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;num1 = num1 * num2;
+num2 = num1 / num2;
+num1 = num1 / num2;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;This solution is also not suitable if multiplication of two number
+overflows.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;13-solution-with-xor-operation&quot;&gt;1.3 Solution with XOR operation&lt;/h3&gt;
+&lt;p&gt;Solution with XOR operation is the best solution if above 2 solution
+applicability fails due to overflow. Consider two number as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;111&lt;/code&gt;) and
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101&lt;/code&gt;).&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;First XOR both number and store the result &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;010&lt;/code&gt;) in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Then XOR &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt; and store the result &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;111&lt;/code&gt;) in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Then XOR &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt; and store the result &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101&lt;/code&gt;) in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt;.
+Swapping is done !&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;num1 = num1 ^ num2;
+num2 = num1 ^ num2;
+num1 = num1 ^ num2;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Ashok Karmegam</name></author><category term="programs" /><category term="program" /><category term="interview questions" /><summary type="html">Swap two numbers without using temporary variable Swapping two numbers need a temporary variable like mentioned below. tmp = num1; num1 = num2; num2 = tmp; Can we achieve swapping of two numbers without using temporary variable ?</summary></entry><entry><title type="html">Egg Dropping Puzzle - n eggs and m floors</title><link href="https://upskillzone.com/puzzles/Egg-Dropping-Puzzle-n-eggs-and-m-floors.html" rel="alternate" type="text/html" title="Egg Dropping Puzzle - n eggs and m floors" /><published>2021-06-04T00:18:00+05:30</published><updated>2021-06-06T20:07:38+05:30</updated><id>https://upskillzone.com/puzzles/Egg-Dropping-Puzzle-n-eggs-and-m-floors</id><content type="html" xml:base="https://upskillzone.com/puzzles/Egg-Dropping-Puzzle-n-eggs-and-m-floors.html">&lt;h1 id=&quot;egg-dropping-puzzle---n-eggs-and-m-floors&quot;&gt;Egg Dropping Puzzle - n eggs and m floors&lt;/h1&gt;
 &lt;p&gt;Given &lt;em&gt;n&lt;/em&gt; number of Eggs are identical in dimension and there is a multistorey
 building with &lt;em&gt;m&lt;/em&gt; floors. In that building only initial few floors will be safe
 for Dropping Eggs, which means egg wont break when it is dropped. After that
@@ -118,445 +353,5 @@ Search.&lt;/li&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;3-complete-implementation-in-c-language&quot;&gt;3. Complete Implementation in C Language&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
-#include &amp;lt;stdint.h&amp;gt;
-#include &amp;lt;getopt.h&amp;gt;
-#include &amp;lt;stdlib.h&amp;gt;
-
-enum enum_opt {
-  OPT_HELP = 1,
-  OPT_EGGS,
-  OPT_FLOORS,
-  OPT_SAFE_FLOOR
-};
-
-struct option lopts[] = {
-  {&quot;help&quot;, no_argument, NULL, OPT_HELP},
-  {&quot;eggs&quot;, required_argument, NULL, OPT_EGGS},
-  {&quot;floors&quot;, required_argument, NULL, OPT_FLOORS},
-  {&quot;safe-floor&quot;, required_argument, NULL, OPT_SAFE_FLOOR},
-};
-
-void help()
-{
-  printf(&quot;Program to perform optimized checks to find which floor is safest\n&quot;);
-  printf(&quot;among m floors, when eggs are dropped.\n&quot;);
-  printf(&quot;This program takes input as n eggs, m floors, and safe floor\n&quot;);
-  printf(&quot;By using these inputs the program gives output as how many\n&quot;);
-  printf(&quot;minimum checks are needed to find the safe floor\n&quot;);
-  printf(&quot;\nUsage:\n&quot;);
-  printf(&quot;&amp;lt;exe&amp;gt; --eggs &amp;lt;count&amp;gt; --floors &amp;lt;count&amp;gt; --safe-floor &amp;lt;floor-num&amp;gt;\n&quot;);
-  exit(0);
-}
-
-uint32_t m_floors, n_eggs, safe_floor;
-uint32_t num_of_checks = 0;
-
-int check_safe(uint32_t floor)
-{
-  num_of_checks++;
-  if (floor &amp;lt;= safe_floor) return 1;
-  return 0;
-}
-
-uint32_t find_safest_floors(uint32_t n_eggs, uint32_t m_floors)
-{
-  uint32_t start = 1, floor;
-  uint32_t end = m_floors;
-  printf(&quot;%u eggs and %u floors\n&quot;, n_eggs, m_floors);
-  do {
-    printf(&quot;Check among floors between %u and %u with %u eggs\n&quot;, start, end,
-            n_eggs);
-    /* Always start and end points to the unchecked floors */
-    if (n_eggs &amp;gt; 1) {
-      printf(&quot; - Doing binary traversal\n&quot;);
-      /* Do binary traversal */
-      if (end != start) {
-        floor = start + ((end - start) / 2);
-      } else {
-        floor = start;
-        /* This is the last check */
-      }
-    } else {
-      printf(&quot; - Doing linear traversal\n&quot;);
-      /* Do linear traversal */
-      floor = start;
-      /* TODO Need to add max check */
-    }
-    printf(&quot; - Checking floor %u\n&quot;, floor);
-    if (check_safe(floor) == 1) {
-      printf(&quot; - %u is safe floor\n&quot;, floor);
-      if (floor &amp;lt; end) {
-        /* Checking floor range adjustment */
-        /* If some more floors are there then point start next to
-         * current floor. */
-        start = floor + 1;
-      } else {
-        /* else we found it */
-        return floor;
-      }
-    } else {
-      printf(&quot; - %u is unsafe floor\n&quot;, floor);
-      if (n_eggs &amp;gt; 1) {
-        /* If we are in binary traversal */
-        n_eggs--; /* Reduce egg count, as one egg is broken */
-        if (floor &amp;gt; start) {
-          /* Checking floor range adjustment */
-          /* If current checking floor is greater than start then
-           * assign (floor - 1) to end. */
-          end = floor - 1;
-        } else {
-          /* else we found it */
-          return (floor - 1);
-        }
-      } else {
-        /* else in linear traversal */
-        /* Found it */
-        return (floor - 1);
-      }
-    }
-  } while (1);
-}
-
-int main(int argc, char *argv[])
-{
-  uint32_t floor;
-  int opt;
-  while ((opt = getopt_long(argc, argv, &quot;&quot;, lopts, NULL)) != -1) {
-    switch (opt) {
-      case OPT_EGGS:
-        n_eggs = atoi(optarg);
-        break;
-      case OPT_FLOORS:
-        m_floors = atoi(optarg);
-        break;
-      case OPT_SAFE_FLOOR:
-        safe_floor = atoi(optarg);
-        break;
-      case OPT_HELP:
-      default:
-        help();
-    }
-  }
-
-  if ((n_eggs == 0) || (m_floors == 0)) {
-    printf(&quot;Invalid eggs(%u) or floors(%u)\n&quot;, n_eggs, m_floors);
-    return -1;
-  }
-  floor = find_safest_floors(n_eggs, m_floors);
-  printf(&quot;It took %u checks to find safest floor %u out of %u floors with %u &quot; \
-          &quot;eggs\n&quot;, num_of_checks, floor, m_floors, n_eggs);
-  return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;4-output&quot;&gt;4. Output&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Below is the operation of the algorithm for &lt;strong&gt;10 floors and 5 eggs&lt;/strong&gt; with 
-the safest floor 4.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ./a.out --eggs 5 --floors 10 --safe-floor 4
-5 eggs and 10 floors
-Check among floors between 1 and 10 with 5 eggs
- - Doing binary traversal
- - Checking floor 5
- - 5 is unsafe floor
-Check among floors between 1 and 4 with 4 eggs
- - Doing binary traversal
- - Checking floor 2
- - 2 is safe floor
-Check among floors between 3 and 4 with 4 eggs
- - Doing binary traversal
- - Checking floor 3
- - 3 is safe floor
-Check among floors between 4 and 4 with 4 eggs
- - Doing binary traversal
- - Checking floor 4
- - 4 is safe floor
-It took 4 checks to find safest floor 4 out of 10 floors with 5 eggs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Below is the operation of the algorithm for &lt;strong&gt;10 floors and 2 eggs&lt;/strong&gt; with 
-the safest floor 4.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ./a.out --eggs 2 --floors 10 --safe-floor 4
-2 eggs and 10 floors
-Check among floors between 1 and 10 with 2 eggs
- - Doing binary traversal
- - Checking floor 5
- - 5 is unsafe floor
-Check among floors between 1 and 4 with 1 eggs
- - Doing linear traversal
- - Checking floor 1
- - 1 is safe floor
-Check among floors between 2 and 4 with 1 eggs
- - Doing linear traversal
- - Checking floor 2
- - 2 is safe floor
-Check among floors between 3 and 4 with 1 eggs
- - Doing linear traversal
- - Checking floor 3
- - 3 is safe floor
-Check among floors between 4 and 4 with 1 eggs
- - Doing linear traversal
- - Checking floor 4
- - 4 is safe floor
-It took 5 checks to find safest floor 4 out of 10 floors with 2 eggs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Above program is archived in the github &lt;a href=&quot;https://github.com/upskillzone/upskillzone-programs/tree/main/puzzles/egg-dropping-puzzle&quot;&gt;repo&lt;/a&gt;
-with detailed explanation of how to use it.&lt;/p&gt;</content><author><name>Ashok Karmegam</name></author><summary type="html">Egg Dropping Puzzle - n eggs and m floors Given n number of Eggs are identical in dimension and there is a multistorey building with m floors. In that building only initial few floors will be safe for Dropping Eggs, which means egg wont break when it is dropped. After that all above floors are unsafe for Egg Dropping.</summary></entry><entry><title type="html">Crossing the Bridge with Torch Puzzle</title><link href="https://upskillzone.com/Interview-Puzzles/Crossing-the-Bridge-with-Torch-Puzzle/" rel="alternate" type="text/html" title="Crossing the Bridge with Torch Puzzle" /><published>2021-01-23T11:46:17+05:30</published><updated>2021-01-15T23:15:49+05:30</updated><id>https://upskillzone.com/Interview-Puzzles/Crossing-the-Bridge-with-Torch-Puzzle</id><content type="html" xml:base="https://upskillzone.com/Interview-Puzzles/Crossing-the-Bridge-with-Torch-Puzzle/">&lt;h1 id=&quot;crossing-the-bridge-with-torch-puzzle&quot;&gt;Crossing the Bridge with Torch Puzzle&lt;/h1&gt;
-&lt;p&gt;Few people are trying to cross an old and rusty bridge in a night. Conditions
-for crossing the bridge are&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Only 2 person can be on the bridge at a time.&lt;/li&gt;
-  &lt;li&gt;Crossing without torch is impossible.&lt;/li&gt;
-  &lt;li&gt;Each person takes different time to cross the bridge, because of different
-age groups of people. So when 2 person crosses, faster walking person also
-should walk equally to the slower walking person. So that both can walk on torch
-light.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Puzzle is to find, &lt;strong&gt;what is the shortest duration taken by all the people to
-cross the bridge?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;1-solution&quot;&gt;1. Solution&lt;/h2&gt;
-&lt;p&gt;Solution is to keep moving 2 people at a time with a torch in multiple batches.
-After every movement, a fastest walking person who reached the destination
-should come back to the starting place with the torch so that remaining people
-can cross.&lt;/p&gt;
-
-&lt;h3 id=&quot;11-solution-with-example&quot;&gt;1.1 Solution with Example&lt;/h3&gt;
-&lt;p&gt;Here the solution is explained with an example.
-Consider four people are crossing the bridge and their time taken
-to cross the bridge are given below.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Person A takes 1 min&lt;/li&gt;
-  &lt;li&gt;Person B takes 2 mins&lt;/li&gt;
-  &lt;li&gt;Person C takes 6 mins&lt;/li&gt;
-  &lt;li&gt;Person D takes 10 mins&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The solution to cross the bridge with above set of 4 people are&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;First find out two fastest walking person and move them. That means move A
-and B. &lt;strong&gt;This takes 2 mins&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Now C and D are in starting place. A and B are in destination with torch.
-Now bring back the torch with the help of fastest walking person on the
-desitnation. That means, make A to bring back the torch. &lt;strong&gt;This takes 1 min&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Now A, C and D are in starting place with torch. B is in destination.
-Now move 2 slowest walking person C and D to the destination. &lt;strong&gt;This takes 10
-mins&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Now bring back torch with the help of fastest walking person B. &lt;strong&gt;This takes
-2 mins&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Now move both A and B. &lt;strong&gt;This takes 2 mins&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Now all of them have crossed the bridge with 5 movement. Totally it takes
-&lt;strong&gt;17mins&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;12-general-solution&quot;&gt;1.2 General Solution&lt;/h3&gt;
-&lt;p&gt;In this puzzle number of person varies, not always with 4 person. So solution
-to solve with any number of person need to follow below procedure.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Move two fastest person.&lt;/li&gt;
-  &lt;li&gt;If some more are waiting in the starting place, then bring back one fastest
-person to starting place. Or else finished.&lt;/li&gt;
-  &lt;li&gt;Move two slowest person.&lt;/li&gt;
-  &lt;li&gt;If some more are waiting in the staring place, then bring back the one
-fastest person to starting place. This person is nothing but the person who
-moved in Step 2. Or else finished.&lt;/li&gt;
-  &lt;li&gt;Now people who are in destination are slowest person, at this time need to
-continue from Step1 to move two fastest person. Now moving slowest person is
-not correct, because next time it will take more time to bring back torch.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Repeatedly doing above mentioned steps will solve the puzzle with any number of
-persons. &lt;strong&gt;Solution ends either at the Step2 or Step4 when there are no person
-in the starting place&lt;/strong&gt;.&lt;/p&gt;</content><author><name>Ashok Karmegam</name></author><summary type="html">Crossing the Bridge with Torch Puzzle Few people are trying to cross an old and rusty bridge in a night. Conditions for crossing the bridge are Only 2 person can be on the bridge at a time. Crossing without torch is impossible. Each person takes different time to cross the bridge, because of different age groups of people. So when 2 person crosses, faster walking person also should walk equally to the slower walking person. So that both can walk on torch light.</summary></entry><entry><title type="html">100 Monkeys and Doors Puzzle</title><link href="https://upskillzone.com/Interview-Puzzles/100-Monkeys-and-Doors-Puzzle/" rel="alternate" type="text/html" title="100 Monkeys and Doors Puzzle" /><published>2021-01-23T11:46:17+05:30</published><updated>2021-01-15T23:15:49+05:30</updated><id>https://upskillzone.com/Interview-Puzzles/100-Monkeys-and-Doors-Puzzle</id><content type="html" xml:base="https://upskillzone.com/Interview-Puzzles/100-Monkeys-and-Doors-Puzzle/">&lt;h1 id=&quot;100-monkeys-and-doors-puzzle&quot;&gt;100 Monkeys and Doors Puzzle&lt;/h1&gt;
-&lt;p&gt;There are 100 doors in a row, all of them are initially in closed state. And
-there are 100 monkeys (or 100 People) as well. All monkeys walks through all
-the doors one by one. Each monkey toggles the door (that means, closing if the
-door is opened or opening if the door is closed) while walking through the
-doors. This toggling on door is performed by monkeys in below mentioned order.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;1st monkey toggles all the doors.&lt;/li&gt;
-  &lt;li&gt;2nd monkey toggles 2nd, 4th, 6th, … 100th door.&lt;/li&gt;
-  &lt;li&gt;3rd monkey toggles 3rd, 6th, 9th, … 99th door.&lt;/li&gt;
-  &lt;li&gt;4th monkey toggles 4th, 8th, 12th, … 100th door.&lt;/li&gt;
-  &lt;li&gt;…&lt;/li&gt;
-  &lt;li&gt;50th monkey toggles 50th and 100th door.&lt;/li&gt;
-  &lt;li&gt;100th monkey toggles only 100th door.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Puzzle is to find out &lt;strong&gt;which all doors are opened at the end after all the
-monkeys walkthrough the doors&lt;/strong&gt; ?&lt;/p&gt;
-
-&lt;h2 id=&quot;1-solution&quot;&gt;1. Solution&lt;/h2&gt;
-&lt;p&gt;Here the initial state of door is closed, so if a door is toggled two times then
-it will be in closed state. That means for even number of toggles the door state
-will be closed. Similarly for odd number of toggles the door state will be
-opened. &lt;strong&gt;So need to find which all doors are toggled by monkey in odd number of
-times&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;11-understanding-factors-of-number&quot;&gt;1.1 Understanding Factors of Number&lt;/h3&gt;
-&lt;p&gt;A door is toggled by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt;th monkey if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt; divides door number. So need to
-understand &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;factors of a number&lt;/code&gt; concept here.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Factors of a number&lt;/strong&gt; are a set of numbers which all can divides an another
-number evenly. For example &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Factors of 10&lt;/code&gt; are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1, 2, 5, 10&lt;/code&gt;. That means, there
-are four factors for the number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt;, all four of them can divide number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt;
-evenly. These four numbers are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt;. This number of factors varies
-for different numbers. For example number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt; has &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6&lt;/code&gt; factors which are
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1, 2, 4, 5, 10, 20&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;All numbers has a minimum of two factors, one of them is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; and the another is
-the same number itself. And all prime numbers has only these two as factors, no
-other factors. Because it is not divisible by any other number, thats why it
-is called as Prime number.&lt;/p&gt;
-
-&lt;p&gt;These factors are always occurs as pair. For example take the factors of the
-number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt;,&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1 x 20 = 20&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2 x 10 = 20&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4 x 5 = 20&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As these factors are occuring in pairs, total number of factors for a numbers
-are always even except for perfect squares.&lt;/p&gt;
-
-&lt;p&gt;Perfect squares (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt; …) are the one which has odd number of
-factors. Because &lt;strong&gt;perfect squares are the one which results to a multiplication
-of two same numbers&lt;/strong&gt;. For example factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt; are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1, 2, 4, 8, 16&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1 x 16 = 16&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2 x 8 = 16&lt;/code&gt;: So both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8&lt;/code&gt; are factors of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4 x 4 = 16&lt;/code&gt;: So &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt; is factor of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;. No duplicate in the list of factors.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So all perfect square numbers (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;, …) has odd number of
-factors.&lt;/p&gt;
-
-&lt;h3 id=&quot;12-using-factors-of-number-to-solve-100-doors-puzzle&quot;&gt;1.2 Using Factors of Number to solve 100 Doors Puzzle&lt;/h3&gt;
-&lt;p&gt;In 100 Door Puzzle, each monkey toggles the door &lt;strong&gt;if the door number is
-divisible by monkey number&lt;/strong&gt;. That means every door is toggled for the factors
-of that door number. That means door number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt; is toggled by 4 times, by the
-1st, 2nd, 5th and 10th monkeys. Similarly door number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt; is toggled by 6
-times.&lt;/p&gt;
-
-&lt;p&gt;So to find out which all doors are opened after all the monkeys walk through,
-need to find out which all doors are toggled in odd number of times.&lt;/p&gt;
-
-&lt;p&gt;As odd number of factors are available only for perfect square numbers, only
-perfect square number doors (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16&lt;/code&gt;, … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;81&lt;/code&gt;) are toggled odd
-number of times. So these doors are opened at the end. All other doors (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt;,
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt;, … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100&lt;/code&gt;) are closed at the end.&lt;/p&gt;</content><author><name>Ashok Karmegam</name></author><summary type="html">100 Monkeys and Doors Puzzle There are 100 doors in a row, all of them are initially in closed state. And there are 100 monkeys (or 100 People) as well. All monkeys walks through all the doors one by one. Each monkey toggles the door (that means, closing if the door is opened or opening if the door is closed) while walking through the doors. This toggling on door is performed by monkeys in below mentioned order. 1st monkey toggles all the doors. 2nd monkey toggles 2nd, 4th, 6th, … 100th door. 3rd monkey toggles 3rd, 6th, 9th, … 99th door. 4th monkey toggles 4th, 8th, 12th, … 100th door. … 50th monkey toggles 50th and 100th door. 100th monkey toggles only 100th door.</summary></entry><entry><title type="html">Swap two numbers without using temporary variable</title><link href="https://upskillzone.com/Interview-Programs/Swap-two-numbers-without-using-temporary-variable/" rel="alternate" type="text/html" title="Swap two numbers without using temporary variable" /><published>2021-01-23T11:46:17+05:30</published><updated>2021-01-15T23:15:49+05:30</updated><id>https://upskillzone.com/Interview-Programs/Swap-two-numbers-without-using-temporary-variable</id><content type="html" xml:base="https://upskillzone.com/Interview-Programs/Swap-two-numbers-without-using-temporary-variable/">&lt;h1 id=&quot;swap-two-numbers-without-using-temporary-variable&quot;&gt;Swap two numbers without using temporary variable&lt;/h1&gt;
-&lt;p&gt;Swapping two numbers need a temporary variable like mentioned below.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tmp = num1;
-num1 = num2;
-num2 = tmp;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Can we achieve swapping of two numbers without using temporary variable ?&lt;/p&gt;
-
-&lt;h2 id=&quot;1-solution&quot;&gt;1. Solution&lt;/h2&gt;
-&lt;p&gt;This can be achieved using three methods which are described below.&lt;/p&gt;
-
-&lt;h3 id=&quot;11-solution-with-addition-and-subtraction-operation&quot;&gt;1.1 Solution with addition and subtraction operation&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;First add both the numbers and store in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; variable itself.&lt;/li&gt;
-  &lt;li&gt;Then subtract &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; and store the result on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt;. Now &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt;
-gets the value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Similarly subtract &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; and store the result on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt;.
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;num1 = num1 + num2;
-num2 = num1 - num2;
-num1 = num1 - num2;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Here the assumption is, the addition of two number does not overflow. If
-overflows this is not the right solution.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;12-solution-with-multiplication-and-division-operation&quot;&gt;1.2 Solution with multiplication and division operation&lt;/h3&gt;
-&lt;p&gt;Similarly swapping of two numbers can be achieved using multiplication and
-division.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;num1 = num1 * num2;
-num2 = num1 / num2;
-num1 = num1 / num2;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;This solution is also not suitable if multiplication of two number
-overflows.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;13-solution-with-xor-operation&quot;&gt;1.3 Solution with XOR operation&lt;/h3&gt;
-&lt;p&gt;Solution with XOR operation is the best solution if above 2 solution
-applicability fails due to overflow. Consider two number as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;111&lt;/code&gt;) and
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101&lt;/code&gt;).&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;First XOR both number and store the result &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;010&lt;/code&gt;) in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Then XOR &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt; and store the result &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;111&lt;/code&gt;) in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Then XOR &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num2&lt;/code&gt; and store the result &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101&lt;/code&gt;) in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num1&lt;/code&gt;.
-Swapping is done !&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;num1 = num1 ^ num2;
-num2 = num1 ^ num2;
-num1 = num1 ^ num2;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Ashok Karmegam</name></author><summary type="html">Swap two numbers without using temporary variable Swapping two numbers need a temporary variable like mentioned below. tmp = num1; num1 = num2; num2 = tmp; Can we achieve swapping of two numbers without using temporary variable ?</summary></entry><entry><title type="html">Interview Programs</title><link href="https://upskillzone.com/Interview-Programs/" rel="alternate" type="text/html" title="Interview Programs" /><published>2021-01-23T11:46:17+05:30</published><updated>2021-01-15T23:15:49+05:30</updated><id>https://upskillzone.com/Interview-Programs</id><content type="html" xml:base="https://upskillzone.com/Interview-Programs/">&lt;h1 id=&quot;interview-programs&quot;&gt;Interview Programs&lt;/h1&gt;
-
-&lt;p&gt;Brain teaser questions of Software Program in an Interview is given below.
-This is one of the basic step done by an interviewer to check coding skills
-of a candidate.&lt;/p&gt;</content><author><name>Ashok Karmegam</name></author><summary type="html">Interview Programs</summary></entry><entry><title type="html">Add two numbers without using arithmetic operators</title><link href="https://upskillzone.com/Interview-Programs/Add-two-numbers-without-using-arithemetic-operators/" rel="alternate" type="text/html" title="Add two numbers without using arithmetic operators" /><published>2021-01-23T11:46:17+05:30</published><updated>2021-01-15T23:15:49+05:30</updated><id>https://upskillzone.com/Interview-Programs/Add-two-numbers-without-using-arithemetic-operators</id><content type="html" xml:base="https://upskillzone.com/Interview-Programs/Add-two-numbers-without-using-arithemetic-operators/">&lt;h1 id=&quot;add-two-numbers-without-using-arithmetic-operators&quot;&gt;Add two numbers without using arithmetic operators&lt;/h1&gt;
-&lt;p&gt;Need to add two number without using arithemetic operators like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;,
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-solution&quot;&gt;1. Solution&lt;/h2&gt;
-&lt;p&gt;Adding two number without using arithmetic operators can be performed using
-binary operators XOR (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt;) and AND (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;).&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;First two number is XORed and stored the result in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sum&lt;/code&gt; variable.
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sum = num1 ^ num2;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Then same two number is ANDed and left shifted once and stored the result
-in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;carry&lt;/code&gt; variable.
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;carry = (num1 &amp;amp; num2) &amp;lt;&amp;lt; 1;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Then if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;carry&lt;/code&gt; is non zero then continue 1st and 2nd step by keeping
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sum&lt;/code&gt; as first number and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;carry&lt;/code&gt; as second number.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Here 1st operation performs XOR operation on two numbers and that ommits the
-carry on every bit. For example XORing two number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;110&lt;/code&gt;) and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100&lt;/code&gt;)
-gives result as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;010&lt;/code&gt;), 3rd position generates carry which needs to be
-placed on 4th position that is not done by X0R. That is why 2nd operation is
-needed here, that performs AND on the same two number and result is left shifted
-to get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1000&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;Now redoing 1st and 2nd operation with first number as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; and 2nd number as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8&lt;/code&gt;
-will get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt; as part of 1st operation. And &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; as part of 2nd operation. The
-execution ends once the 2nd operation (carry generation) returns 0.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-algorithm-pseudocode&quot;&gt;2. Algorithm Pseudocode&lt;/h2&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int add(int num1, int num2)
-{
-  int sum, carry;
-  do {
-    sum = num1 ^ num2;
-    carry = (num1 &amp;amp; num2) &amp;lt;&amp;lt; 1;
-    num1 = sum;
-    num2 = carry;
-  } while (carry != 0);
-  return sum;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Ashok Karmegam</name></author><summary type="html">Add two numbers without using arithmetic operators Need to add two number without using arithemetic operators like +, -, *, /, %.</summary></entry></feed>
+&lt;p&gt;C Program implementation for this Egg dropping puzzle is available in
+&lt;a href=&quot;https://github.com/upskillzone/upskillzone-programs/tree/main/puzzles/egg-dropping-puzzle&quot;&gt;https://github.com/upskillzone/upskillzone-programs/tree/main/puzzles/egg-dropping-puzzle&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ashok Karmegam</name></author><category term="puzzles" /><category term="puzzle" /><category term="interview questions" /><summary type="html">Egg Dropping Puzzle - n eggs and m floors Given n number of Eggs are identical in dimension and there is a multistorey building with m floors. In that building only initial few floors will be safe for Dropping Eggs, which means egg wont break when it is dropped. After that all above floors are unsafe for Egg Dropping.</summary></entry></feed>
